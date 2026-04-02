@@ -40,17 +40,6 @@ Find, score, shortlist, and learn from Reddit opportunities.
 - Save successful comment angles for later reuse.
 - Separate brand-specific learning histories.
 
-## Screenshots / demo
-
-Add a screenshot or GIF here showing:
-- a sample shortlist
-- a sample Google Sheet row
-- the learning loop in action
-
-Example placeholder:
-
-![Demo placeholder](docs/demo-placeholder.png)
-
 ## Installation
 
 ```bash
