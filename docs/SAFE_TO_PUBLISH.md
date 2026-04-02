@@ -1,0 +1,1 @@
+Do not add private Google Sheet links, credentials, usernames, or lead lists. Keep the repo workflow-focused.
