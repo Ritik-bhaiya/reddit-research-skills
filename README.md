@@ -13,6 +13,12 @@ This repo is for people who want a practical way to:
 ### `reddit-research`
 A workflow for discovering, scoring, shortlisting, and learning from Reddit opportunities.
 
+### Live discovery demo
+- `skills/reddit-research/scripts/discover_live.py` — fetches live Reddit posts from target subreddits and search queries, then ranks them.
+
+### Demo profile
+- `brands/sample-marketing.json` — a dummy freelancer/agency profile for testing the workflow without exposing real brand data.
+
 ## Who this is for
 
 - developers building brand research workflows
@@ -36,6 +42,19 @@ Reddit can be a strong signal source, but only if you can separate:
 - low-quality or forced promotion
 
 This project makes that process repeatable.
+
+## Example output
+
+Using the dummy profile `Sample Marketing`:
+
+- **Task**: Comment
+- **Task URL**: `https://www.reddit.com/r/example/comments/abc123/sample_post/`
+- **User_name**: `u/sample_user`
+- **Status**: `live`
+- **Feedback**: `strong fit for agency-style outreach`
+- **Report**: `useful lead for freelancer/marketing workflow`
+
+This example is fake on purpose so no real brand data is exposed.
 
 ## Quick start
 
@@ -63,6 +82,12 @@ python skills/reddit-research/scripts/score.py
 python skills/reddit-research/scripts/report.py
 ```
 
+### Run the dummy marketing demo
+
+```bash
+python skills/reddit-research/scripts/demo_sample.py
+```
+
 ## Limitations
 
 - This is not a magic bot.
@@ -83,6 +108,7 @@ python skills/reddit-research/scripts/report.py
 - Compare which subreddits produce useful comments.
 - Save successful comment angles for later reuse.
 - Separate brand-specific learning histories.
+- Use a dummy profile like `Sample Marketing` to test the workflow without exposing real brand data.
 
 ## Repository health
 
@@ -119,14 +145,18 @@ CONTRIBUTING.md
 SECURITY.md
 CODE_OF_CONDUCT.md
 .gitignore
+brands/
+  sample-marketing.json
 skills/
   reddit-research/
     SKILL.md
     scripts/
       discover.py
+      discover_live.py
       score.py
       cleanup.py
       report.py
+      demo_sample.py
       _shared.py
     references/
       brand-profiles.md

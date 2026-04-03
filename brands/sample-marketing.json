@@ -1,0 +1,148 @@
+{
+  "brand_id": "sample-marketing",
+  "brand_name": "Sample Marketing",
+  "description": "Dummy brand profile for a freelancer or marketing agency looking for people who need help with marketing, growth, or content.",
+  "target_subreddits": [
+    "smallbusiness",
+    "Entrepreneur",
+    "marketing",
+    "socialmedia",
+    "digital_marketing",
+    "SEO",
+    "content_marketing",
+    "advertising",
+    "business",
+    "freelance",
+    "SideProject",
+    "startup",
+    "B2BMarketing",
+    "growthhacking"
+  ],
+  "exclude_subreddits": [
+    "jobs",
+    "forhire",
+    "Hiring",
+    "careerquestions",
+    "resumes",
+    "unemployed",
+    "antiwork",
+    "memes"
+  ],
+  "keywords": [
+    "marketing help",
+    "need help with marketing",
+    "growth",
+    "lead generation",
+    "content strategy",
+    "social media",
+    "ads",
+    "seo",
+    "brand awareness",
+    "freelancer",
+    "agency",
+    "small business",
+    "startup",
+    "launch"
+  ],
+  "intent_terms": [
+    "need help",
+    "looking for advice",
+    "how do i market",
+    "how to get customers",
+    "how do i grow",
+    "need a marketer",
+    "recommend",
+    "what should i do",
+    "stuck",
+    "looking for a freelancer",
+    "any tips",
+    "need promotion",
+    "want to improve"
+  ],
+  "intent_buckets": {
+    "pain": [
+      "i need more customers",
+      "i need help with marketing",
+      "no one is seeing my product",
+      "i don't know how to get leads",
+      "my ads are not working"
+    ],
+    "evaluation_need": [
+      "which marketing strategy",
+      "what marketing channel",
+      "what tools should i use",
+      "best way to promote",
+      "how should i start"
+    ],
+    "workflow_tool_ask": [
+      "marketing tools",
+      "content calendar",
+      "lead generation workflow",
+      "social media management",
+      "email marketing setup"
+    ],
+    "deployment": [
+      "hire freelancer",
+      "hire agency",
+      "outsource marketing",
+      "done-for-you marketing"
+    ],
+    "operations": [
+      "ads not converting",
+      "low traffic",
+      "low engagement",
+      "poor conversion",
+      "campaign performance"
+    ]
+  },
+  "search_config": {
+    "min_keyword_hits": 1,
+    "min_intent_hits": 1,
+    "max_query_batches": 12,
+    "max_subreddit_scan": 20
+  },
+  "scoring_weights": {
+    "relevance": 0.3,
+    "semantic": 0.2,
+    "opportunity": 0.2,
+    "brand_fit": 0.15,
+    "capability": 0.1,
+    "commentability": 0.05,
+    "risk_penalty": 0.2
+  },
+  "hard_filters": {
+    "exclude_terms": [
+      "hire me",
+      "looking for job",
+      "resume review",
+      "job posting",
+      "internship",
+      "salary",
+      "leetcode"
+    ],
+    "require_any_terms": [
+      "marketing",
+      "growth",
+      "ads",
+      "seo",
+      "content",
+      "customers",
+      "leads",
+      "brand",
+      "freelancer",
+      "agency"
+    ]
+  },
+  "allowed_claims": [
+    "Sample Marketing is a dummy profile for testing.",
+    "The profile is designed for freelancer or agency lead discovery.",
+    "It can help find people asking for marketing help or growth advice."
+  ],
+  "forbidden_claims": [
+    "guaranteed clients",
+    "guaranteed revenue",
+    "guaranteed conversions",
+    "best marketing tool",
+    "instant growth"
+  ]
+}
